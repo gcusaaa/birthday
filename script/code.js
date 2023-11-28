@@ -1,6 +1,4 @@
 
-
-
 // let person1 = {
 //     firstName: 'Thimna'
 // }
@@ -13,6 +11,7 @@
 // console.log(personDetails);
 // console.log(person1);
 // console.log(person2);
+
 
 
 
@@ -30,13 +29,13 @@
 
 
 
-// let firstName = 'Zubair'
+// let firstName = ['Gcusa', 'Sipho']
 // let state = 'late'
 // switch (false) {
-//     case state == 'present':
+//     case firstName == 'present':
 //         console.log("present");
 //         break;
-//     case state !=="":
+//     case firstName !=="":
 //         console.log("late");
 //         break;
 //     case  state !=="":
@@ -46,6 +45,43 @@
 //         console.log("absent");
 //         break;
 // }
+
+
+// let marksClass1 = [66, 78, 57, 92, 88, 62, 75, 72]
+// function marks(marksClass1) {
+//     let addUpMarks = marksClass1.length;
+//     let sumMarks = 0;
+    
+//     for(let i=0; i < addUpMarks; i++) {
+//         sumMarks += marksClass1[i];
+//     }
+//     return(sumMarks)
+// }
+//  let totalMarks = marks(marksClass1);
+//  console.log(totalMarks);
+
+// marks(marksClass1)
+
+// function hexToRGB(hexColor) {
+//     let hex = hexColor.split('').join('')
+//     let r = parseInt(hex.slice(0, 2), 16)    
+//     let g = parseInt(hex.slice(2, 4), 16)    
+//     let b = parseInt(hex.slice(4), 16)
+//     console.log(hex, r, g, b);    
+// }
+
+
+// function hexToRGB(hex) {
+//     let Hex = hex.replace('');
+//     let [r, g, b] = [
+//         Hex.slice(0, 2),
+//         Hex.slice(0, 2),
+//         Hex.slice(2),
+//     ].map(component => parseInt(component, 16));
+
+//     console.log('${hex}, ${r}, ${g}, ${b}');
+}
+
 
 
 
@@ -78,20 +114,20 @@
 
 
 
-//     buttons.forEach(button => {
-//         button.addEventListener('click', function (e) {
-//           let buttonText = e.target.textContent;
+// buttons.forEach(button => {
+//     button.addEventListener('click', function (e) {
+//       let buttonText = e.target.textContent;
     
-//           switch (buttonText) {
-//             case '':
-//               calculatevalue();
-//               break;
-//             default:
-//               appendToInput(buttonText);
-//               break;
-//           }
-//         });
-//       });
+//       switch (buttonText) {
+//         case '':
+//           calculatevalue();
+//           break;
+//         default:
+//           appendToInput(buttonText);
+//           break;
+//       }
+//     });
+//   });
 // })
 
 // var a = 'letsfind';
@@ -107,8 +143,8 @@
 // ++num1 +2;
 
 
-// const pi=3.14;
-// var pi=4;
+// const pi =3.14;
+// let pii =4;
 // console.log(pi);
 
 // var x = "0";
@@ -128,24 +164,19 @@
 
 // const x1 = new Date(2020, 0, 1)
 
-// // console.log(x1);
+// console.log(x1);
 
 // const message='How are you'
-
 // message.indexOf('H');
-
 // const message= "How are you?
-
 // message.includes('?');
 
 
 // let x= new Date();
-
 // console.log(x.getDay());
 
 
 // console.reset()
-
 // console.log('5*8');
 
 
@@ -234,6 +265,41 @@
 // let x=10, y=3;
 // answer=x**y;
 // console.log(answer);
+
+// function findUnique(array1, array2) {
+//     let arrayscombine = [...array1, ...array2];
+
+//     let uniqueElements = arrayscombine.filter((value, index, self) => {
+//     return self.indexOf(value) == index;
+//     });
+
+//     return uniqueElements.map(String).sort();
+// }
+
+// console.log(findUnique([1, 2, 3], [100, 2, 1, 10]));
+// console.log(findUnique([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
+// console.log(findUnique([1, 2, 3], [100, 2, 1, 10]));
+
+
+
+// let booleanArray = [true, false, true, true, false];
+// let trueCount = booleanArray.reduce(function (count, value) {
+//   return value ? count + 1 : count;
+// }, 0);
+// console.log(+ trueCount);
+
+
+
+
+
+
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+// ["1", "2", "3", "10", "100"]
+// console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
+// ["1", "2", "3", "4", "5", "6"]
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+// ["1", "2", "3", "10", "100"]
+
 
 
 
