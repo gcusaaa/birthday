@@ -80,7 +80,7 @@
 //     ].map(component => parseInt(component, 16));
 
 //     console.log('${hex}, ${r}, ${g}, ${b}');
-}
+// }
 
 
 
@@ -356,12 +356,6 @@
 
 
 
-
-
-
-
-
-
 // var a = 10;
 // if(a == a++)
 // document.write(a);
@@ -376,3 +370,128 @@
 //             } else {
 //                document.write("<b>Unknown Book</b>");
 //             }
+
+
+
+
+
+// let [first, second, ...remaining] = [23, 5, 9, 11, 24, 32]
+// console.log(first, second, remaining);
+
+
+
+// Exception handling using try .. and catch
+// function division(fOp) {
+//     try{
+//         let result = fOp / sOp
+//         console.log(result);
+//     }catch(e) {
+//         console.log("Please try again next time");
+//     }
+// }
+// division(4)
+/*
+When to use an exception handling:
+- Retrieving a value from an input element
+- Handling arguments
+- Accessing a file
+- Accessing data from a table (in a database)
+- Etc..
+*/
+
+// Make use of throw
+// function addition(...args) {
+//     let totalOfNumbs = 0 
+//     args.forEach( item=> {
+//         if(typeof item != 'number') 
+//             throw new Error(`${item} is not a number`)
+//         else totalOfNumbs += item
+//     })
+//     return totalOfNumbs
+// }
+// try{
+//     console.log(addition(4, 8, 'Joel', 9));
+// }catch(e) {
+//     console.log(e.message);
+// }
+
+// Getter and setter
+
+
+
+
+
+
+/* Local storage
+- .getItem(key)
+- .setItem(key, value : string)
+- .removeItem(key): Remove the key
+- .clear(): Remove all the keys
+*/
+
+// Explain promise
+// let myPromise = new Promise((resolve, reject)=> {
+//     let numb1 = 12
+//     let numb2 = 2
+//     // For division
+//     if(numb2 > 0 ) 
+//         resolve(`Result is: ${numb1 / numb2}`) 
+//     reject(`You can't divide ${numb1} by ${numb2}`)
+// })
+
+// myPromise.then(
+//     (correct)=>{
+//         console.log(correct);
+//     },
+//     (denied)=> {
+//         console.log(denied);
+//     }
+// )
+
+// Fetch API
+// let cardContainer = document.querySelector('[data-cards]') 
+// fetch('https://randomuser.me/api?results=50')
+// .then(data=> data.json())
+// .then(result=> {
+//     let {results} = result 
+//     results.forEach( people =>{
+//         console.log(people);
+//         cardContainer.innerHTML += 
+//         `
+//         <div class="card" style="width: 18rem;">
+//             <img src="${people.picture.large}" class="card-img-top img-fluid" alt="${people.name.first}">
+//             <div class="card-body">
+//             <h5 class="card-title">${people.name.title}. ${people.name.first} ${people.name.last}</h5>
+//             <p class="card-text">Age: ${people.registered.age}</p>
+//         </div>
+//         `
+//     })
+// })
+
+// Asynchronous function 
+// async function getData() {
+//     let data = await fetch('https://randomuser.me/api?results=50')
+//     return data.json()
+// }
+// async function display() {
+//     let cardContainer = document.querySelector('[data-cards]') 
+//     cardContainer.innerHTML = ''
+//     let {results} = await getData()
+//     results.forEach( people => {
+//         cardContainer.innerHTML += `
+//         <div class="card" style="width: 18rem;">
+//             <img src="${people.picture.large}" class="card-img-top img-fluid" alt="${people.name.first}">
+//             <div class="card-body">
+//             <h5 class="card-title">${people.name.title}. ${people.name.first} ${people.name.last}</h5>
+//             <p class="card-text">Age: ${people.registered.age}</p>
+//         </div>
+//         `
+//     })
+// }
+// display()
+
+// Host JSON file to GitHub
+
+
+// On Thursday, students need to start working on the Todo List
+
